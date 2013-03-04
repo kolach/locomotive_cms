@@ -1,0 +1,5 @@
+- if can? :manage, Locomotive::ContentType
+  .action
+    = link_to content_tag(:em) + content_tag(:span, t('locomotive.content_types.index.new')), new_content_type_url, :class => 'button'
+
+= locale_picker_link
